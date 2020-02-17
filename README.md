@@ -23,7 +23,7 @@ First you need to have `node` or `yarn` installed on your machine.
 You'll also need `docker compose`.
 Then, you can clone this repository and run the following commands inside the project folder:
 
-1. `git clone https://github.com/robertveloso/gostack-desafio-01.git`
+1. `git clone https://github.com/robertveloso/megahack.git`
 
 2. `yarn dev`;
 
