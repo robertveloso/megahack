@@ -25,9 +25,11 @@ Then, you can clone this repository and run the following commands inside the pr
 
 1. `git clone https://github.com/robertveloso/gostack-desafio-01.git`
 
-1. `yarn dev`;
+2. `yarn dev`;
 
-1. As soon as the Postgres instance is running, open another terminal and run: `yarn migrate` you might need to change the .env to 'localhost', 'postgres' or 'ip address'.
+3. As soon as the Postgres instance is running, open another terminal and run: `yarn migrate` you might need to change the .env to 'localhost', 'postgres' or 'ip address'.
+
+4. import the insomnia.json to your insomnia client.
 
 > ps.: don't forget to create the `.env` (please duplicate `.env.example`).
 
