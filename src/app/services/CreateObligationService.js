@@ -34,7 +34,6 @@ class CreateObligationService {
     nome_plano,
     data_hora_proc,
     meio_pg_proc,
-    comprovante_vinculado_proc,
   }) {
     /**
      * Check if provider_id is a provider
@@ -109,7 +108,6 @@ class CreateObligationService {
       nome_plano,
       data_hora_proc,
       meio_pg_proc,
-      comprovante_vinculado_proc,
     });
 
     /**

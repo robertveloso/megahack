@@ -15,14 +15,38 @@ class ObligationController {
     const perPage = 20;
 
     const cacheKey = `user:${user_id}:obligations:${page}`;
-    const cached = await Cache.get(cacheKey);
+    // const cached = await Cache.get(cacheKey);
 
-    if (cached) return res.json(cached);
+    // if (cached) return res.json(cached);
 
     const obligations = await Obligation.findAll({
       where: { user_id, canceled_at: null },
       order: ['data'],
-      attributes: ['id', 'data', 'past', 'cancelable'],
+      attributes: [
+        'id',
+        'data',
+        'data_venc_at',
+        'valor',
+        'instrucoes',
+        'link_doc',
+        'nosso_numero',
+        'cpf_cnpj_beneficiario',
+        'nome_beneficiario',
+        'endereco_beneficiario',
+        'nome_fantasia_beneficiario',
+        'cpf_cnpj_pagador',
+        'nome_pagador',
+        'endereco_pagador',
+        'if_pagamento',
+        'agencia_pagamento',
+        'conta_pagamento',
+        'periodicidade_assinatura',
+        'nome_plano',
+        'data_hora_proc',
+        'meio_pg_proc',
+        'past',
+        'cancelable',
+      ],
       limit: perPage,
       offset: (page - 1) * perPage,
       include: [
@@ -69,7 +93,6 @@ class ObligationController {
       nome_plano,
       data_hora_proc,
       meio_pg_proc,
-      comprovante_vinculado_proc,
     } = req.body;
 
     const obligation = await CreateObligationService.run({
@@ -95,7 +118,6 @@ class ObligationController {
       nome_plano,
       data_hora_proc,
       meio_pg_proc,
-      comprovante_vinculado_proc,
     });
 
     return res.json(obligation);
