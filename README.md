@@ -4,9 +4,10 @@
 <p align="center">
 <img src="screenshot/about.png">
 <small>
+</br>
 <a href="https://miro.com/app/board/o9J_kvTkvmU=/">Miro Board</a></br>
 <a href="https://docs.google.com/document/d/1A_mswkxDpoxGo43qppBXYW_XOFPF3TCJFNY04T1UlBI/edit">Description</a></br>
-<a href="https://www.youtube.com/watch?v=2PPu8cfzK7Q">Youtube Video</a>
+<a href="https://youtu.be/Jl2e1GUXElo">Youtube Video</a>
 </small>
 </p>
 
